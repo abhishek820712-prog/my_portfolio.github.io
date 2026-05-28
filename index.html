@@ -19,7 +19,7 @@
       </ul>
     </nav>
   </header>
-
+  <main
   <!-- Hero Section -->
   <section class="hero">
     <h2>Hello, I'm Abhishek Chauhan</h2>
@@ -29,7 +29,7 @@
   </section>
 
   <!-- About Section -->
-  <section id="about">
+  <section id="about"> 
     <h2>About Me</h2>
     <p>
       I am a dedicated developer with a love for creating clean, modern, and user-friendly websites.
@@ -64,14 +64,23 @@
 
   <!-- Contact Section -->
   <section id="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+  <h2>Contact Me</h2>
+  <form action="https://formspree.io/f/xwvzazyl" method="POST">
+    
+    <input type="text" id="name" name="user_name" placeholder="Your Name" required>
+    <input type="email" id="email" name="user_email" placeholder="Your Email" required>
+    <textarea id="message" name="user_message" placeholder="Your Message" required></textarea>
+    
+    <!-- Optional honeypot field to block spam -->
+    <input type="text" name="_gotcha" style="display:none">
+    
+    
+    
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+  </main> 
 
   <!-- Footer -->
   <footer>
